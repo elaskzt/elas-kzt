@@ -1,0 +1,231 @@
+/********************
+GENERAL
+********************/
+
+p, h3, h1, h2, h3, h4, h5, h6, li, span {
+	cursor: default;
+	line-height: 1;
+}
+
+ul {
+	padding-left: 0;
+	list-style-type: none;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+@font-face {
+  font-family: 'helveticaneuecyrthin';
+  src: url('../fonts/helveticaneuecyr-thin-webfont.eot');
+  src: url('../fonts/helveticaneuecyr-thin-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/helveticaneuecyr-thin-webfont.woff2') format('woff2'),
+       url('../fonts/helveticaneuecyr-thin-webfont.woff') format('woff'),
+       url('../fonts/helveticaneuecyr-thin-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'helveticaneuecyrroman';
+	font-weight: normal;
+	font-style: normal;
+
+	src: url('../fonts/helveticaneuecyr-roman-webfont.eot');
+	src: url('../fonts/helveticaneuecyr-roman-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/helveticaneuecyr-roman-webfont.woff') format('woff'),
+	url('../fonts/helveticaneuecyr-roman-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'bebas_neuebook';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/bebasneue_book-webfont.eot');
+    src: url('../fonts/bebasneue_book-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/bebasneue_book-webfont.woff') format('woff'),
+    url('../fonts/bebasneue_book-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'bebas_neuebold';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/bebasneue_bold-webfont.eot');
+    src: url('../fonts/bebasneue_bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/bebasneue_bold-webfont.woff') format('woff'),
+    url('../fonts/bebasneue_bold-webfont.ttf') format('truetype');
+}
+
+
+
+/********************
+HEADER
+********************/
+
+.header {
+	background-color: rgb(245,209,68);
+	border-bottom: 2px solid #ffd947;
+	position: absolute;
+	width: 100%;
+}
+
+.logo-header-wraper {
+	background-color: #ffd947;
+	padding: 9px 34px;
+	display: block;
+	max-width: 158px;
+	width: 100%;
+}
+
+.logo-header {
+
+}
+
+.header-nav {
+	text-align: center;
+}
+
+.navbar {
+	margin-bottom: 0;
+	border: none;
+	border-radius: 0;
+	min-height: 78px;
+}
+
+.navbar-nav {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	float: none;
+	vertical-align: top;
+}
+
+.navbar-nav>li {
+	width: 25%;
+}
+
+.navbar-nav>li>a {
+	font-family: 'helveticaneuecyrthin';
+	font-size: 17px;
+	color: #272a32;
+	padding-top: 19px;
+	padding-bottom: 19px;
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+text-decoration: underline;
+background-color: transparent;
+}
+
+.header-tel {
+	font-family: 'helveticaneuecyrthin';
+	font-size: 20px;
+	color: #272a32;
+	margin-top: 32px;
+	line-height: .85;
+}
+
+
+
+
+/********************
+STARTER-SEC
+********************/
+
+.starter-sec {
+	background: url(../img/bg.png) center no-repeat;
+	height: 100%;
+	padding-top: 80px;
+}
+
+.starter-sec-header {
+	font-family: 'bebas_neuebold';
+	font-size: 89px;
+	color: #50536a;
+	text-align: center;
+	margin-top: 38px;
+	margin-bottom: 10px;
+	line-height: .8;
+}
+
+.starter-sec-subheader {
+	font-family: 'bebas_neuebook';
+	font-size: 78px;
+	color: #50536a;
+	line-height: .89;
+	margin-top: 0;
+}
+
+.starter-sec-form-header {
+	font-family: 'bebas_neuebold';
+	font-size: 44px;
+	color: #d0d3db;
+	line-height: .775;
+	margin-bottom: 15px;
+}
+
+.starter-sec-form {
+	background-color: #4e5267;
+	padding: 19px;
+	border-radius: 3px;
+	border: 2px solid #323640;
+}
+
+.starter-sec-form .form-group {
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.starter-sec-form .form-control	{
+	height: 28px;
+	padding-left: 35px;
+	border-radius: 0;
+	border: none;
+	background-color: #d0d3db;
+	font-size: 16px;
+	color: #50536a;
+}
+
+.starter-sec-form .form-control::-webkit-input-placeholder {
+	color: #50536a;
+}
+
+.starter-sec-form .form-control::-moz-placeholder {
+	color: #50536a;
+}
+
+.starter-sec-form .form-control:-ms-input-placeholder {
+	color: #50536a;
+}
+
+.form-ico {
+	position: absolute;
+	left: 0;
+}
+
+.starter-sec-form-btn {
+	background-color: #ce4a43;
+	border-radius: 3px;
+	border: none;
+	width: 100%;
+	font-family: 'helveticaneuecyrroman';
+	font-size: 16px;
+	color: #fff;
+	height: 32px;
+}
+
+
+
+
+
+
+
