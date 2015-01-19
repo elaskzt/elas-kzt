@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootFolio.css">
     <link rel="stylesheet" href="css/main.css">
 
     <!--[if lt IE 9]>
@@ -61,289 +62,268 @@
 
       <section class="portfolio-sec">
         <div class="tags-overlay"></div>
+        <div class="color-overlay"></div>
         <div class="container">
           <div class="row">
             <div class="col-md-12">
+            <div class="main-tab" role="tabpanel">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                  <a href="#tile" aria-controls="tile" role="tab" data-toggle="tab">
+                    <img src="img/tile.png" height="17" width="17" alt="">плитками
+                  </a>
+                </li>
 
-              <div role="tabpanel">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
-                  <li role="presentation"><a href="#tile" aria-controls="tile" role="tab" data-toggle="tab"><img src="img/tile.png" height="17" width="17" alt="">плитками</a></li>
-                  <li role="presentation"><a href="#list" aria-controls="list" role="tab" data-toggle="tab"><img src="img/list.png" height="17" width="23" alt="">списком</a></li>
-                </ul>
-                <!-- Tab panes -->
-                <div class="tab-content">
+                <li role="presentation">
+                  <a href="#list" aria-controls="list" role="tab" data-toggle="tab">
+                    <img src="img/list.png" height="17" width="23" alt="">списком
+                  </a>
+                </li>
+              </ul>
 
-                  <div role="tabpanel" class="tab-pane fade in active" id="tile">
-                    <div class="tags-block">
-                      <button class="filter tags-btn active" data-filter="all">Все работы</button>
-                      <button class="filter tags-btn" data-filter=".lps">Посадочные страницы</button>
-                      <button class="filter tags-btn" data-filter=".corporative">Корпоративные сайты</button>
-                      <button class="filter tags-btn" data-filter=".e-commerce">E-commerce</button>
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="tile">
+                  <div class="tags-tab" role="tabpanel">
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li role="presentation" class="active"><a href="#all-work-tile" aria-controls="all-work-tile" role="tab" data-toggle="tab">Все работы</a></li>
+                      <li role="presentation"><a href="#lp-tile" aria-controls="lp-tile" role="tab" data-toggle="tab">Посадочные страницы</a></li>
+                      <li role="presentation"><a href="#corporative-tile" aria-controls="corporative-tile" role="tab" data-toggle="tab">Корпоративные сайты</a></li>
+                      <li role="presentation"><a href="#e-commerce-tile" aria-controls="e-commerce-tile" role="tab" data-toggle="tab">E-commerce</a></li>
+                    </ul>
+
+                    <div class="portfolio-header-block">
+                      <h3 class="portfolio-header">Да Винчи отдыхает</h3>
+                      <p class="portfolio-subheader">Тут должен быть еще один заебатый подслоган, который раскрывает нашу охуеннсоть, он должен быть во всю длину</p>
                     </div>
                     <div class="clearfix"></div>
-                    <h2 class="portfolio-header">Да Винчи отдыхает</h2>
-                    <p class="portfolio-subheader">Тут должен быть еще один заебатый подслоган, который раскрывает нашу охуенноть, он должен быть во всю длину</p>
-                    <div id="Container">
-                      <div class="mix lps">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane fade in active" id="all-work-tile">
                         <div class="tomato"></div>
-                      </div>
-                      <div class="mix lps">
+                        <div class="green"></div>
+                        <div class="orange"></div>
                         <div class="tomato"></div>
-                      </div>
-                      <div class="mix lps">
+                        <div class="green"></div>
+                        <div class="orange"></div>
                         <div class="tomato"></div>
-                      </div>
-                      <div class="mix lps">
+                        <div class="green"></div>
+                        <div class="orange"></div>
                         <div class="tomato"></div>
-                      </div>
-                      <div class="mix lps">
+                        <div class="green"></div>
+                        <div class="orange"></div>
                         <div class="tomato"></div>
-                      </div>
-                      <div class="mix lps">
+                        <div class="green"></div>
+                        <div class="orange"></div>
                         <div class="tomato"></div>
-                      </div>
-                      <div class="mix corporative">
                         <div class="green"></div>
-                      </div>
-                      <div class="mix corporative">
-                        <div class="green"></div>
-                      </div>
-                      <div class="mix corporative">
-                        <div class="green"></div>
-                      </div>
-                      <div class="mix corporative">
-                        <div class="green"></div>
-                      </div>
-                      <div class="mix corporative">
-                        <div class="green"></div>
-                      </div>
-                      <div class="mix corporative">
-                        <div class="green"></div>
-                      </div>
-                      <div class="mix e-commerce">
                         <div class="orange"></div>
                       </div>
-                      <div class="mix e-commerce">
-                        <div class="orange"></div>
+                      <div role="tabpanel" class="tab-pane fade" id="lp-tile">
+                        <div class="tomato"></div>
+                        <div class="tomato"></div>
+                        <div class="tomato"></div>
+                        <div class="tomato"></div>
+                        <div class="tomato"></div>
+                        <div class="tomato"></div>
+                        <div class="tomato"></div>
+                        <div class="tomato"></div>
+                        <div class="tomato"></div>
+                        <div class="tomato"></div>
                       </div>
-                      <div class="mix e-commerce">
-                        <div class="orange"></div>
+                      <div role="tabpanel" class="tab-pane fade" id="corporative-tile">
+                        <div class="green"></div>
+                        <div class="green"></div>
+                        <div class="green"></div>
+                        <div class="green"></div>
+                        <div class="green"></div>
+                        <div class="green"></div>
+                        <div class="green"></div>
+                        <div class="green"></div>
+                        <div class="green"></div>
+                        <div class="green"></div>
+                        <div class="green"></div>
+                        <div class="green"></div>
                       </div>
-                      <div class="mix e-commerce">
+                      <div role="tabpanel" class="tab-pane fade" id="e-commerce-tile">
                         <div class="orange"></div>
-                      </div>
-                      <div class="mix e-commerce">
                         <div class="orange"></div>
-                      </div>
-                      <div class="mix e-commerce">
+                        <div class="orange"></div>
+                        <div class="orange"></div>
+                        <div class="orange"></div>
+                        <div class="orange"></div>
+                        <div class="orange"></div>
+                        <div class="orange"></div>
+                        <div class="orange"></div>
+                        <div class="orange"></div>
+                        <div class="orange"></div>
+                        <div class="orange"></div>
+                        <div class="orange"></div>
+                        <div class="orange"></div>
                         <div class="orange"></div>
                       </div>
                     </div>
+
                   </div>
+                </div>
 
-                  <!-- <div role="tabpanel" class="tab-pane fade" id="list">
-                    <div class="tags-block">
-                      <button class="filter tags-btn active" data-filter="all">Все работы</button>
-                      <button class="filter tags-btn" data-filter=".lps-list">Посадочные страницы</button>
-                      <button class="filter tags-btn" data-filter=".corporative-list">Корпоративные сайты</button>
-                      <button class="filter tags-btn" data-filter=".e-commerce-list">E-commerce</button>
-                    </div>
-                    <div class="clearfix"></div>
-                    <h2 class="portfolio-header">Да Винчи отдыхает</h2>
-                    <p class="portfolio-subheader">Тут должен быть еще один заебатый подслоган, который раскрывает нашу охуенноть, он должен быть во всю длину</p>
-                    <div id="Container1">
-                      <div class="mix lps-list">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <div class="portfolio-block-know-more">
-                          <p class="owner-txt"><span class="owner-txt-name">Евгений Захаров</span><br> Владелец сети кафе<br>"Куры Гриль"<br><br> +7(777)123-4567</p>
-                          <a href="#" class="portfolio-list-site-link">www.курыгриль.рф</a>
-                        </div>
-                      </div>
-                      <div class="mix lps-list">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <div class="portfolio-block-know-more">
-                          <p class="owner-txt"><span class="owner-txt-name">Евгений Захаров</span><br> Владелец сети кафе<br>"Куры Гриль"<br> +7(777)123-4567</p>
-                          <a href="#" class="portfolio-list-site-link">www.курыгриль.рф</a>
-                        </div>
-                      </div>
-                      <div class="mix lps-list">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <div class="portfolio-block-know-more">
-                          <p class="owner-txt"><span class="owner-txt-name">Евгений Захаров</span><br> Владелец сети кафе<br>"Куры Гриль"<br> +7(777)123-4567</p>
-                          <a href="#" class="portfolio-list-site-link">www.курыгриль.рф</a>
-                        </div>
-                      </div>
-                      <div class="mix lps-list">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <div class="portfolio-block-know-more">
-                          <p class="owner-txt"><span class="owner-txt-name">Евгений Захаров</span><br> Владелец сети кафе<br>"Куры Гриль"<br> +7(777)123-4567</p>
-                          <a href="#" class="portfolio-list-site-link">www.курыгриль.рф</a>
-                        </div>
-                      </div>
-                      <div class="mix lps-list">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <div class="portfolio-block-know-more">
-                          <p class="owner-txt"><span class="owner-txt-name">Евгений Захаров</span><br> Владелец сети кафе<br>"Куры Гриль"<br> +7(777)123-4567</p>
-                          <a href="#" class="portfolio-list-site-link">www.курыгриль.рф</a>
-                        </div>
-                      </div>
-                      <div class="mix lps-list">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <div class="portfolio-block-know-more">
-                          <p class="owner-txt"><span class="owner-txt-name">Евгений Захаров</span><br> Владелец сети кафе<br>"Куры Гриль"<br> +7(777)123-4567</p>
-                          <a href="#" class="portfolio-list-site-link">www.курыгриль.рф</a>
-                        </div>
-                      </div>
-                      <div class="mix corporative-list">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <div class="portfolio-block-know-more">
-                          <p class="owner-txt"><span class="owner-txt-name">Евгений Захаров</span><br> Владелец сети кафе<br>"Куры Гриль"<br> +7(777)123-4567</p>
-                          <a href="#" class="portfolio-list-site-link">www.курыгриль.рф</a>
-                        </div>
-                      </div>
-                      <div class="mix corporative-list">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <div class="portfolio-block-know-more">
-                          <p class="owner-txt"><span class="owner-txt-name">Евгений Захаров</span><br> Владелец сети кафе<br>"Куры Гриль"<br> +7(777)123-4567</p>
-                          <a href="#" class="portfolio-list-site-link">www.курыгриль.рф</a>
-                        </div>
-                      </div>
-                      <div class="mix corporative-list">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <div class="portfolio-block-know-more">
-                          <p class="owner-txt"><span class="owner-txt-name">Евгений Захаров</span><br> Владелец сети кафе<br>"Куры Гриль"<br> +7(777)123-4567</p>
-                          <a href="#" class="portfolio-list-site-link">www.курыгриль.рф</a>
-                        </div>
-                      </div>
-                      <div class="mix corporative-list">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <div class="portfolio-block-know-more">
-                          <p class="owner-txt"><span class="owner-txt-name">Евгений Захаров</span><br> Владелец сети кафе<br>"Куры Гриль"<br> +7(777)123-4567</p>
-                          <a href="#" class="portfolio-list-site-link">www.курыгриль.рф</a>
-                        </div>
-                      </div>
-                      <div class="mix corporative-list">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <div class="portfolio-block-know-more">
-                          <p class="owner-txt"><span class="owner-txt-name">Евгений Захаров</span><br> Владелец сети кафе<br>"Куры Гриль"<br> +7(777)123-4567</p>
-                          <a href="#" class="portfolio-list-site-link">www.курыгриль.рф</a>
-                        </div>
-                      </div>
-                      <div class="mix corporative-list">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <div class="portfolio-block-know-more">
-                          <p class="owner-txt"><span class="owner-txt-name">Евгений Захаров</span><br> Владелец сети кафе<br>"Куры Гриль"<br> +7(777)123-4567</p>
-                          <a href="#" class="portfolio-list-site-link">www.курыгриль.рф</a>
-                        </div>
-                      </div>
-                      <div class="mix e-commerce-list">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <div class="portfolio-block-know-more">
-                          <p class="owner-txt"><span class="owner-txt-name">Евгений Захаров</span><br> Владелец сети кафе<br>"Куры Гриль"<br> +7(777)123-4567</p>
-                          <a href="#" class="portfolio-list-site-link">www.курыгриль.рф</a>
-                        </div>
-                      </div>
-                      <div class="mix e-commerce-list">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <div class="portfolio-block-know-more">
-                          <p class="owner-txt"><span class="owner-txt-name">Евгений Захаров</span><br> Владелец сети кафе<br>"Куры Гриль"<br> +7(777)123-4567</p>
-                          <a href="#" class="portfolio-list-site-link">www.курыгриль.рф</a>
-                        </div>
-                      </div>
-                      <div class="mix e-commerce-list">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <div class="portfolio-block-know-more">
-                          <p class="owner-txt"><span class="owner-txt-name">Евгений Захаров</span><br> Владелец сети кафе<br>"Куры Гриль"<br> +7(777)123-4567</p>
-                          <a href="#" class="portfolio-list-site-link">www.курыгриль.рф</a>
-                        </div>
-                      </div>
-                      <div class="mix e-commerce-list">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <div class="portfolio-block-know-more">
-                          <p class="owner-txt"><span class="owner-txt-name">Евгений Захаров</span><br> Владелец сети кафе<br>"Куры Гриль"<br> +7(777)123-4567</p>
-                          <a href="#" class="portfolio-list-site-link">www.курыгриль.рф</a>
-                        </div>
-                      </div>
-                      <div class="mix e-commerce-list">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <div class="portfolio-block-know-more">
-                          <p class="owner-txt"><span class="owner-txt-name">Евгений Захаров</span><br> Владелец сети кафе<br>"Куры Гриль"<br> +7(777)123-4567</p>
-                          <a href="#" class="portfolio-list-site-link">www.курыгриль.рф</a>
-                        </div>
-                      </div>
-                      <div class="mix e-commerce-list">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <img src="img/list-img.jpg" alt="" class="portfolio-list-img">
-                        <div class="portfolio-block-know-more">
-                          <p class="owner-txt"><span class="owner-txt-name">Евгений Захаров</span><br> Владелец сети кафе<br>"Куры Гриль"<br> +7(777)123-4567</p>
-                          <a href="#" class="portfolio-list-site-link">www.курыгриль.рф</a>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div> -->
+                <div role="tabpanel" class="tab-pane fade" id="list">
+                   <div class="tags-tab" role="tabpanel">
 
+                     <!-- Nav tabs -->
+                     <ul class="nav nav-tabs" role="tablist">
+                       <li role="presentation" class="active"><a href="#all-work-list" aria-controls="all-work-list" role="tab" data-toggle="tab">Все работы</a></li>
+                       <li role="presentation"><a href="#lp-list" aria-controls="lp-list" role="tab" data-toggle="tab">Посадочные страницы</a></li>
+                       <li role="presentation"><a href="#corporative-list" aria-controls="corporative-list" role="tab" data-toggle="tab">Корпоративные сайты</a></li>
+                       <li role="presentation"><a href="#e-commerce-list" aria-controls="e-commerce-list" role="tab" data-toggle="tab">E-commerce</a></li>
+                     </ul>
+
+                     <div class="portfolio-header-block">
+                       <h3 class="portfolio-header">Да Винчи отдыхает</h3>
+                       <p class="portfolio-subheader">Тут должен быть еще один заебатый подслоган, который раскрывает нашу охуеннсоть, он должен быть во всю длину</p>
+                     </div>
+                     <div class="clearfix"></div>
+                     <!-- Tab panes -->
+                     <div class="tab-content">
+                       <div role="tabpanel" class="tab-pane fade in active" id="all-work-list">
+                          <div class="portfolio-list-wraper">
+                            <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                            <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                            <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                            <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                            <div class="site-owner-info">
+                              <p class="site-owner-name"><span>Евгений Захаров</span><br> Владелец сети кафе<br> "куры гриль"</p>
+                              <p class="site-owner-tel">+7(777) 123-4567</p>
+                              <a href="#" class="site-owner-links">www.abc.com</a>
+                              <a href="#" class="site-owner-links">www.cda.com</a>
+                            </div>
+                            <button class="site-list-btn">Узнать больше</button>
+                          </div>
+                          <div class="portfolio-list-wraper">
+                            <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                            <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                            <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                            <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                            <div class="site-owner-info">
+                              <p class="site-owner-name"><span>Евгений Захаров</span><br> Владелец сети кафе<br> "куры гриль"</p>
+                              <p class="site-owner-tel">+7(777) 123-4567</p>
+                              <a href="#" class="site-owner-links">www.abc.com</a>
+                              <a href="#" class="site-owner-links">www.cda.com</a>
+                            </div>
+                            <button class="site-list-btn">Узнать больше</button>
+                          </div>
+                          <div class="portfolio-list-wraper">
+                            <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                            <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                            <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                            <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                            <div class="site-owner-info">
+                              <p class="site-owner-name"><span>Евгений Захаров</span><br> Владелец сети кафе<br> "куры гриль"</p>
+                              <p class="site-owner-tel">+7(777) 123-4567</p>
+                              <a href="#" class="site-owner-links">www.abc.com</a>
+                              <a href="#" class="site-owner-links">www.cda.com</a>
+                            </div>
+                            <button class="site-list-btn">Узнать больше</button>
+                          </div>
+                          <div class="portfolio-list-wraper">
+                            <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                            <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                            <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                            <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                            <div class="site-owner-info">
+                              <p class="site-owner-name"><span>Евгений Захаров</span><br> Владелец сети кафе<br> "куры гриль"</p>
+                              <p class="site-owner-tel">+7(777) 123-4567</p>
+                              <a href="#" class="site-owner-links">www.abc.com</a>
+                              <a href="#" class="site-owner-links">www.cda.com</a>
+                            </div>
+                            <button class="site-list-btn">Узнать больше</button>
+                          </div>
+                          <div class="portfolio-list-wraper">
+                            <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                            <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                            <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                            <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                            <div class="site-owner-info">
+                              <p class="site-owner-name"><span>Евгений Захаров</span><br> Владелец сети кафе<br> "куры гриль"</p>
+                              <p class="site-owner-tel">+7(777) 123-4567</p>
+                              <a href="#" class="site-owner-links">www.abc.com</a>
+                              <a href="#" class="site-owner-links">www.cda.com</a>
+                            </div>
+                            <button class="site-list-btn">Узнать больше</button>
+                          </div>
+                       </div>
+                       <div role="tabpanel" class="tab-pane fade" id="lp-list">
+                         <div class="portfolio-list-wraper">
+                           <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                           <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                           <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                           <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                           <div class="site-owner-info">
+                             <p class="site-owner-name"><span>Евгений Захаров</span><br> Владелец сети кафе<br> "куры гриль"</p>
+                             <p class="site-owner-tel">+7(777) 123-4567</p>
+                             <a href="#" class="site-owner-links">www.abc.com</a>
+                             <a href="#" class="site-owner-links">www.cda.com</a>
+                           </div>
+                           <button class="site-list-btn">Узнать больше</button>
+                         </div>
+                         <div class="portfolio-list-wraper">
+                           <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                           <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                           <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                           <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                           <div class="site-owner-info">
+                             <p class="site-owner-name"><span>Евгений Захаров</span><br> Владелец сети кафе<br> "куры гриль"</p>
+                             <p class="site-owner-tel">+7(777) 123-4567</p>
+                             <a href="#" class="site-owner-links">www.abc.com</a>
+                             <a href="#" class="site-owner-links">www.cda.com</a>
+                           </div>
+                           <button class="site-list-btn">Узнать больше</button>
+                         </div>
+                       </div>
+                       <div role="tabpanel" class="tab-pane fade" id="corporative-list">
+                        <div class="portfolio-list-wraper">
+                          <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                          <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                          <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                          <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                          <div class="site-owner-info">
+                            <p class="site-owner-name"><span>Евгений Захаров</span><br> Владелец сети кафе<br> "куры гриль"</p>
+                            <p class="site-owner-tel">+7(777) 123-4567</p>
+                            <a href="#" class="site-owner-links">www.abc.com</a>
+                            <a href="#" class="site-owner-links">www.cda.com</a>
+                          </div>
+                          <button class="site-list-btn">Узнать больше</button>
+                        </div>
+                       </div>
+                       <div role="tabpanel" class="tab-pane fade" id="e-commerce-list">
+                         <div class="portfolio-list-wraper">
+                           <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                           <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                           <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                           <img src="img/list-img.jpg" height="213" width="179" alt="" class="portfolio-list-img">
+                           <div class="site-owner-info">
+                             <p class="site-owner-name"><span>Евгений Захаров</span><br> Владелец сети кафе<br> "куры гриль"</p>
+                             <p class="site-owner-tel">+7(777) 123-4567</p>
+                             <a href="#" class="site-owner-links">www.abc.com</a>
+                             <a href="#" class="site-owner-links">www.cda.com</a>
+                           </div>
+                           <button class="site-list-btn">Узнать больше</button>
+                         </div>
+                       </div>
+                     </div>
+
+                   </div>
                 </div>
               </div>
 
             </div>
+            </div>
           </div>
         </div>
-        <div class="clearfix"></div>
+        <!-- <div class="clearfix"></div> -->
       </section>
 
     </div>
@@ -351,8 +331,7 @@
 
   <script src="js/vendor/jquery-1.11.1.min.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
-  <script src="js/vendor/jquery.mixitup.min.js"></script>
-  <script src="js/vendor/jquery.smoothState.js"></script>
+  <!-- <script src="js/vendor/jquery.smoothState.js"></script> -->
   <script src="js/main.js"></script>
   </body>
 </html>
