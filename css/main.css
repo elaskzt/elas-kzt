@@ -2,9 +2,18 @@
 GENERAL
 ********************/
 
-p, h3, h1, h2, h3, h4, h5, h6, li, span {
-	cursor: default;
+p,
+h3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+span {
 	line-height: 1;
+	cursor: default;
 }
 
 ul {
@@ -18,14 +27,15 @@ body {
 }
 
 @font-face {
-  font-family: 'helveticaneuecyrthin';
-  src: url('../fonts/helveticaneuecyr-thin-webfont.eot');
-  src: url('../fonts/helveticaneuecyr-thin-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/helveticaneuecyr-thin-webfont.woff2') format('woff2'),
-       url('../fonts/helveticaneuecyr-thin-webfont.woff') format('woff'),
-       url('../fonts/helveticaneuecyr-thin-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'helveticaneuecyrthin';
+	font-weight: normal;
+	font-style: normal;
+
+	src: url('../fonts/helveticaneuecyr-thin-webfont.eot');
+	src: url('../fonts/helveticaneuecyr-thin-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/helveticaneuecyr-thin-webfont.woff2') format('woff2'),
+	url('../fonts/helveticaneuecyr-thin-webfont.woff') format('woff'),
+	url('../fonts/helveticaneuecyr-thin-webfont.ttf') format('truetype');
 }
 
 @font-face {
@@ -40,33 +50,34 @@ body {
 }
 
 @font-face {
-    font-family: 'bebas_neuebook';
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'bebas_neuebook';
+	font-weight: normal;
+	font-style: normal;
 
-    src: url('../fonts/bebasneue_book-webfont.eot');
-    src: url('../fonts/bebasneue_book-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/bebasneue_book-webfont.woff') format('woff'),
-    url('../fonts/bebasneue_book-webfont.ttf') format('truetype');
+	src: url('../fonts/bebasneue_book-webfont.eot');
+	src: url('../fonts/bebasneue_book-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/bebasneue_book-webfont.woff') format('woff'),
+	url('../fonts/bebasneue_book-webfont.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'bebas_neuebold';
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'bebas_neuebold';
+	font-weight: normal;
+	font-style: normal;
 
-    src: url('../fonts/bebasneue_bold-webfont.eot');
-    src: url('../fonts/bebasneue_bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/bebasneue_bold-webfont.woff') format('woff'),
-    url('../fonts/bebasneue_bold-webfont.ttf') format('truetype');
+	src: url('../fonts/bebasneue_bold-webfont.eot');
+	src: url('../fonts/bebasneue_bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/bebasneue_bold-webfont.woff') format('woff'),
+	url('../fonts/bebasneue_bold-webfont.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'kelson_sans_rubold';
-  src: url('../fonts/kelson_sans_bold_ru.eot');
-  src: url('../fonts/kelson_sans_bold_ru.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/kelson_sans_bold_ru.woff') format('woff'),
-       url('../fonts/kelson_sans_bold_ru.ttf') format('truetype');
+	font-family: 'kelson_sans_rubold';
+
+	src: url('../fonts/kelson_sans_bold_ru.eot');
+	src: url('../fonts/kelson_sans_bold_ru.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/kelson_sans_bold_ru.woff') format('woff'),
+	url('../fonts/kelson_sans_bold_ru.ttf') format('truetype');
 }
 
 
@@ -83,23 +94,23 @@ HEADER
 ********************/
 
 .header {
+	position: absolute;
+	z-index: 999;
+	width: 100%;
 	background-color: rgb(245,209,68);
 	border-bottom: 2px solid #ffd947;
-	position: absolute;
-	width: 100%;
-	z-index: 999;
 }
 
 .logo-header-wraper {
 	padding: 9px 34px;
 	display: block;
-	max-width: 158px;
 	width: 100%;
+	max-width: 158px;
 }
 
 .logo-header-img {
-	margin-left: auto;
 	margin-right: auto;
+	margin-left: auto;
 }
 
 .logo {
@@ -113,50 +124,56 @@ HEADER
 
 .navbar {
 	margin-bottom: 0;
+	min-height: 78px;
 	border: none;
 	border-radius: 0;
-	min-height: 78px;
 }
 
 .navbar-nav {
 	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	align-items: center;
+	display:    -moz-flex;
+	display:     -ms-flex;
+	display:      -o-flex;
+	display:         -ms-flexbox;
+	display:         flex;
 	float: none;
 	vertical-align: top;
+
+	-webkit-align-items: center;
+
+	    -ms-flex-align: center;
+
+	        align-items: center;
 }
 
-.navbar-nav>li {
+.navbar-nav > li {
 	width: 20%;
 }
 
-.navbar-nav>li.active {
+.navbar-nav > li.active {
 	background-color: #ffd947;
 }
 
-.navbar-nav>li>a {
+.navbar-nav > li > a {
+	padding-top: 19px;
+	padding-bottom: 19px;
 	font-family: 'helveticaneuecyrthin';
 	font-size: 17px;
 	color: #272a32;
-	padding-top: 19px;
-	padding-bottom: 19px;
 }
 
-.nav>li>a:hover,
-.nav>li>a:focus {
+.nav > li > a:hover,
+.nav > li > a:focus {
 	text-decoration: underline;
 	background-color: transparent;
 }
 
 .header-tel {
+	margin-top: 32px;
 	font-family: 'helveticaneuecyrthin';
 	font-size: 20px;
-	color: #272a32;
-	margin-top: 32px;
 	line-height: .85;
+	color: #272a32;
 }
 
 
@@ -166,64 +183,63 @@ STARTER-SEC
 ********************/
 
 .starter-sec {
-	background: url(../img/bg.png) center no-repeat;
-	height: 100vh;
 	padding-top: 80px;
-	-webkit-background-size: cover;
+	height: 100vh;
+	background: url(../img/bg.png) center no-repeat;
 	background-size: cover;
 }
 
 .starter-sec-header {
-	font-family: 'bebas_neuebold';
-	font-size: 89px;
-	color: #50536a;
-	text-align: center;
 	margin-top: 38px;
 	margin-bottom: 10px;
+	font-family: 'bebas_neuebold';
+	font-size: 89px;
 	line-height: .8;
+	text-align: center;
+	color: #50536a;
 }
 
 .starter-sec-subheader {
-	font-family: 'bebas_neuebook';
-	font-size: 78px;
-	color: #50536a;
-	line-height: .89;
 	margin-top: 0;
 	margin-left: 20px;
+	font-family: 'bebas_neuebook';
+	font-size: 78px;
+	line-height: .89;
+	color: #50536a;
 }
 
 .starter-sec-form-header {
+	margin-bottom: 15px;
 	font-family: 'bebas_neuebold';
 	font-size: 44px;
-	color: #d0d3db;
 	line-height: .775;
-	margin-bottom: 15px;
+	color: #d0d3db;
 }
 
 .starter-sec-form {
-	background-color: #4e5267;
-	padding: 19px;
-	border-radius: 3px;
-	border: 2px solid #323640;
-	max-width: 262px;
-	width: 100%;
-	margin-left: auto;
 	margin-right: 15px;
+	margin-left: auto;
+	padding: 19px;
+	width: 100%;
+	max-width: 262px;
+	background-color: #4e5267;
+	border: 2px solid #323640;
+	border-radius: 3px;
 }
 
 .starter-sec-form .form-group {
-	margin-bottom: 10px;
 	position: relative;
+	margin-bottom: 10px;
 }
 
-.starter-sec-form .form-control	{
-	height: 28px;
+.starter-sec-form .form-control {
 	padding-left: 35px;
-	border-radius: 0;
-	border: none;
-	background-color: #d0d3db;
+	height: 28px;
 	font-size: 16px;
 	color: #50536a;
+	background-color: #d0d3db;
+	border: none;
+	border-radius: 0;
 }
 
 .starter-sec-form .form-control::-webkit-input-placeholder {
@@ -244,14 +260,14 @@ STARTER-SEC
 }
 
 .starter-sec-form-btn {
-	background-color: #ce4a43;
-	border-radius: 3px;
-	border: none;
 	width: 100%;
+	height: 32px;
 	font-family: 'helveticaneuecyrroman';
 	font-size: 16px;
 	color: #fff;
-	height: 32px;
+	background-color: #ce4a43;
+	border: none;
+	border-radius: 3px;
 }
 
 
@@ -261,49 +277,48 @@ PORTFOLIO-SEC
 ********************/
 
 .portfolio-sec {
-	background: url(../img/bg.png) center no-repeat;
-	padding-top: 80px;
 	position: relative;
-	-webkit-background-size: cover;
-	background-size: cover;
+	padding-top: 80px;
 	height: 100%;
 	min-height: 1192px;
+	background: url(../img/bg.png) center no-repeat;
+	background-size: cover;
 }
 
 .portfolio-header {
+	margin-top: 31px;
+	margin-bottom: 0;
 	font-family: 'kelson_sans_rubold';
 	font-size: 96px;
 	text-align: center;
-	color: #272a32;
-	margin-bottom: 0;
 	text-transform: uppercase;
-	margin-top: 31px;
+	color: #272a32;
 }
 
 .portfolio-subheader {
-	text-align: center;
+	margin-bottom: 34px;
 	font-family: 'helveticaneuecyrthin';
 	font-size: 17px;
+	text-align: center;
 	color: #272a32;
-	margin-bottom: 34px;
 }
 
 .tags-overlay {
-	background-color: rgba(201,201,201,.8);
-	height: 100px;
 	position: absolute;
 	top: 80px;
-	width: 76%;
 	right: 0;
+	width: 76%;
+	height: 100px;
+	background-color: rgba(201,201,201,.8);
 }
 
 .color-overlay {
-	background-color: rgba(219,219,219,.8);
-	height: 100px;
 	position: absolute;
-	width: 24%;
 	top: 80px;
 	left: 0;
+	width: 24%;
+	height: 100px;
+	background-color: rgba(219,219,219,.8);
 }
 
 .tags-block {
@@ -311,144 +326,152 @@ PORTFOLIO-SEC
 }
 
 .tags-btn {
-	border-radius: 3px;
-	border: 1px solid #fff;
-	background-color: transparent;
-	color: #fff;
-	font-size: 17px;
-	font-family: 'helveticaneuecyrthin';
 	margin-right: 10px;
+	font-family: 'helveticaneuecyrthin';
+	font-size: 17px;
+	color: #fff;
+	background-color: transparent;
+	border: 1px solid #fff;
+	border-radius: 3px;
 	transition: all linear .2s;
 }
 
 .tags-btn.active {
-	background-color: #fff;
 	color: #444957;
+	background-color: #fff;
 }
 
 /*left nav (плитками/списком)*/
 
-.main-tab>.nav-tabs {
-	border-bottom: none;
-	text-align: center;
-	float: left;
+.main-tab > .nav-tabs {
 	margin-right: 30px;
 	margin-left: 40px;
+	float: left;
+	text-align: center;
+	border-bottom: none;
 }
 
-.main-tab>.nav-tabs>li>a {
+.main-tab > .nav-tabs > li > a {
 	padding: 0;
 	line-height: 1;
 }
 
-.main-tab>.nav-tabs>li {
+.main-tab > .nav-tabs > li {
 	margin-top: 15px;
 	float: none;
 }
 
-.main-tab>.nav-tabs>li img {
-	display: block;
-	margin-left: auto;
+.main-tab > .nav-tabs > li img {
 	margin-right: auto;
+	margin-left: auto;
+	display: block;
 }
 
-.main-tab>.nav-tabs>li.active>a,
-.main-tab>.nav-tabs>li.active>a:hover,
-.main-tab>.nav-tabs>li.active>a:focus {
+.main-tab > .nav-tabs > li.active > a,
+.main-tab > .nav-tabs > li.active > a:hover,
+.main-tab > .nav-tabs > li.active > a:focus {
 	color: #272a32;
 	background-color: transparent!important;
 	border: none;
 }
 
-.main-tab>.nav-tabs>li>a {
+.main-tab > .nav-tabs > li > a {
 	margin-right: 0;
 	border: none;
 	border-radius: 0;
 }
 
-.main-tab>.nav-tabs>li>a:hover {
+.main-tab > .nav-tabs > li > a:hover {
 	border-color: transparent;
 }
 
 /*tags-nav*/
 
-.tags-tab>.nav-tabs {
-	border-bottom: none;
+.tags-tab > .nav-tabs {
 	min-height: 100px;
+	border-bottom: none;
 }
 
-.tags-tab>.nav-tabs>li {
+.tags-tab > .nav-tabs > li {
+	margin-top: 15px;
 	margin-bottom: 0;
+	margin-left: 14px;
 	border: 1px solid #fff;
 	border-radius: 3px;
-	margin-left: 14px;
-	margin-top: 15px;
 }
 
-.tags-tab>.nav-tabs>li.active>a,
-.tags-tab>.nav-tabs>li.active>a:hover,
-.tags-tab>.nav-tabs>li.active>a:focus {
+.tags-tab > .nav-tabs > li.active > a,
+.tags-tab > .nav-tabs > li.active > a:hover,
+.tags-tab > .nav-tabs > li.active > a:focus {
 	color: #444957;
+	background-color: #fff;
 	border: none;
 	border-radius: 0;
-	background-color: #fff;
 }
 
-.tags-tab>.nav-tabs>li>a {
+.tags-tab > .nav-tabs > li > a {
 	margin-right: 0;
-	line-height: 1;
-	border: none;
-	font-size: 17px;
 	font-family: 'helveticaneuecyrthin';
+	font-size: 17px;
+	line-height: 1;
+	text-decoration: none;
 	color: #fff;
 	background-color: transparent;
-	text-decoration: none;
+	border: none;
 }
 
-.tags-tab>.nav>li>a {
+.tags-tab > .nav > li > a {
 	padding: 4px;
 }
 
-.tab-content>.active#all-work-tile,
-.tab-content>.active#lp-tile,
-.tab-content>.active#corporative-tile,
-.tab-content>.active#e-commerce-tile {
+.tab-content > .active#all-work-tile,
+.tab-content > .active#lp-tile,
+.tab-content > .active#corporative-tile,
+.tab-content > .active#e-commerce-tile {
 	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	display:    -moz-flex;
+	display:     -ms-flex;
+	display:      -o-flex;
+	display:         -ms-flexbox;
+	display:         flex;
+
+	-webkit-flex-wrap: wrap;
+
+	    -ms-flex-wrap: wrap;
+
+	        flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
 }
 
 .tomato {
-	background-color: tomato;
-	height: 150px;
-	width: 150px;
 	margin-bottom: 2%;
+	width: 150px;
+	height: 150px;
+	background-color: tomato;
 }
 
 .green {
-	background-color: green;
-	height: 150px;
-	width: 150px;
 	margin-bottom: 2%;
+	width: 150px;
+	height: 150px;
+	background-color: green;
 }
 
 .orange {
-	background-color: orange;
-	height: 150px;
-	width: 150px;
 	margin-bottom: 2%;
+	width: 150px;
+	height: 150px;
+	background-color: orange;
 }
 
 .portfolio-list-wraper {
-	border-radius: 6px;
-	border: 1px solid #272a32;
-	overflow: hidden;
 	position: relative;
 	margin-bottom: 25px;
+	overflow: hidden;
+	border: 1px solid #272a32;
+	border-radius: 6px;
 }
 
 .portfolio-list-img {
@@ -457,15 +480,15 @@ PORTFOLIO-SEC
 }
 
 .site-owner-info {
-	padding: 18px 0;
 	position: relative;
 	right: -18px;
+	padding: 18px 0;
 	color: #272a32;
 }
 
 .site-owner-name {
-	font-size: 17px;
 	font-family: 'helveticaneuecyrthin';
+	font-size: 17px;
 }
 
 .site-owner-name span {
@@ -473,58 +496,74 @@ PORTFOLIO-SEC
 }
 
 .site-owner-tel {
-	font-size: 17px;
 	font-family: 'helveticaneuecyrthin';
+	font-size: 17px;
 }
 
 .site-owner-links {
-	font-size: 17px;
-	font-family: 'helveticaneuecyrthin';
-	text-decoration: underline;
 	display: block;
 	font-family: 'helveticaneuecyrthin';
+	font-family: 'helveticaneuecyrthin';
+	font-size: 17px;
+	text-decoration: underline;
 	color: #272a32;
 }
 
 .site-list-btn {
-	font-size: 12px;
-	font-family: 'helveticaneuecyrroman';
-	max-width: 222px;
-	width: 100%;
-	background-color: #272a32;
-	color: #fff;
 	position: absolute;
 	right: 0;
-	border: none;
+	width: 100%;
+	max-width: 222px;
 	height: 42px;
+	font-family: 'helveticaneuecyrroman';
+	font-size: 12px;
+	color: #fff;
+	background-color: #272a32;
+	border: none;
 }
-
-
-
-
 
 /*
  * CSS Animations
  * Don't forget to add vendor prefixes!
  */
 .m-scene .scene_element {
-  animation-duration: 0.25s;
-  transition-timing-function: ease-in;
-  animation-fill-mode: both;
+	transition-timing-function: ease-in;
+	-webkit-animation-duration: .25s;
+	        animation-duration: .25s;
+
+	-webkit-animation-fill-mode: both;
+
+	        animation-fill-mode: both;
 }
 
 .m-scene .scene_element--fadein {
-  animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;
+	        animation-name: fadeIn;
 }
 
 .m-scene.is-exiting .scene_element {
-  animation-direction: alternate-reverse;
+	-webkit-animation-direction: alternate-reverse;
+	        animation-direction: alternate-reverse;
 }
 
 /*
  * Keyframes
  */
+@-webkit-keyframes fadeIn {
+
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
