@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	//Smoothstate
-/*
+
 	;(function($) {
 	  'use strict';
 	  var $body = $('html, body'),
@@ -24,18 +24,7 @@ $(document).ready(function() {
 	      }).data('smoothState');
 	      //.data('smoothState') makes public methods available
 	})(jQuery);
-*/
 
-	// $(function() {
-	// 	$(".tags-block button").click(function() {
-	// 	  // remove classes from all
-	// 	  $(".tags-block button").removeClass("active");
-	// 	  // add class to the one we clicked
-	// 	  $(this).addClass("active");
-	// 	  // stop the page from jumping to the top
-	// 	  return false;
-	// 	});
-	// });
 
 });
 
